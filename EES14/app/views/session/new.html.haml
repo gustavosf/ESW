@@ -1,0 +1,9 @@
+= form_tag session_path, :class => 'form-horizontal span6 offset3' do
+  %fieldset
+    %center
+      %legend Identifique-se
+    
+    %center
+      = username_field_tag :password, nil, :class => 'input-xlarge', :placeholder => 'senha'
+      = password_field_tag :password, nil, :class => 'input-xlarge', :placeholder => 'senha'
+      = submit_tag "Log in", :class => 'btn btn-primary'

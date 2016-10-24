@@ -1,0 +1,29 @@
+[{
+  "email": "gustavosf@gmail.com",
+  "password": "tmp",
+  "name": "Gustavo Seganfredo Farias",
+  "active": 1,
+  "access": ["admin", "registered"],
+  "last_login": 0
+},{
+  "email": "rguerra@gmail.com",
+  "password": "tmp",
+  "name": "Renan Guerra",
+  "active": 1,
+  "access": ["admin", "registered"],
+  "last_login": 0
+},{
+  "email": "admin@email.com",
+  "password": "tmp",
+  "name": "Test user",
+  "active": 1,
+  "access": ["admin", "registered"],
+  "last_login": 0
+},{
+  "email": "user@email.com",
+  "password": "tmp",
+  "name": "Test user",
+  "active": 1,
+  "access": ["registered"],
+  "last_login": 0
+}]

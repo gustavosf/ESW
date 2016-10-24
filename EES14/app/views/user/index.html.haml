@@ -1,0 +1,16 @@
+%div
+  Filtrar por nome:
+  = text_field_tag :filter
+
+%br
+
+%div
+  = link_to "Incluir usuário", new_user_path
+
+%hr
+%ul
+  - @users.each do |user|
+    %li
+      = link_to user.name, user
+      %br
+      E-mail: #{user.email}

@@ -1,0 +1,17 @@
+%h2 Editar usuário
+
+= form_for @user, :url => {:controller => 'user', :action => 'update'} do |f|
+  %div
+    = label_tag :list_name, 'Nome'
+    = f.text_field :name
+  %div
+    = label_tag :list_name, 'E-Mail'
+    = f.text_field :email
+  %div
+    = label_tag :list_name, 'Grau de acesso'
+    = f.select :access do
+      = options_for_select [['Admin', 'admin'], ['Registrado', 'registrado']]
+  %div
+    = submit_tag 'Salvar'
+    = submit_tag 'Cancelar', onclick: 'history.back()'
+  
