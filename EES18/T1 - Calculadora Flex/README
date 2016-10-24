@@ -1,0 +1,5 @@
+Melhorias
+
+- Inclusão de "step" para cada input do tipo number (0.01)
+- Inclusão de meta-viewport para melhorar exibição em dispositivos mobile
+- Melhorias no CSS
