@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Calculadora Flex</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <h1>Calculadora Flex</h1>
+    </header>
+    <div class="content">
+        <form class="form">
+            <div>
+                <label for="Gas_Cons">Consumo com Gasolina:
+                </label>
+                <input type="number" name="Gas_Cons" id="Gas_Cons">
+            </div>
+            <div>
+                <label for="Eta_Cons">Consumo com Etanol:
+                </label>
+                <input type="number" name="Eta_Cons" id="Eta_Cons">
+            </div>
+            <div>
+                <label for="Gas_Price">Gasolina:</label>
+                <input type="number" step="0.01" name="Gas_Price" id="Gas_Price" placeholder="Preço da Gasolina">
+            </div>
+            <div>
+                <label>Etanol:</label>
+                <input type="number" step="0.01" name="Eta_Price" id="Eta_Price" placeholder="Preço do Etanol">
+            </div>
+        </form>
+    </div>
+    <footer>
+        <button onclick="CalcFlex()" type="button">Gasolina ou Etanol?</button>
+    </footer>
+</body>
+<script src="storage.js"></script>
+
+</html>
