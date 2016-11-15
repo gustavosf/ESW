@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My First App</string>
+    <string name="name">Nome</string>
+    <string name="email">E-mail</string>
+    <string name="gender">Gênero</string>
+    <string name="male">Masculino</string>
+    <string name="female">Feminino</string>
+    <string name="trans">Trans</string>
+    <string name="save">Salvar</string>
+</resources>

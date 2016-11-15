@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="utf-8">
+	<title>Brasileirão 2016</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="dist/css/ratchet.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+
+	<script src="dist/js/ratchet.js"></script>
+</head>
+
+<body>
+	<header class="bar bar-nav">
+		<h1 class="title">Brasileirão 2016</h1>
+	</header>
+
+	<nav class="bar bar-standard bar-header-secondary">
+		<div class="segmented-control">
+			<a class="control-item active" href="#classificacao">Classificação</a>
+			<a class="control-item" href="#rodada">Rodada</a>
+		</div>
+	</nav>
+
+	<div class="content">
+		<div id="classificacao" class="control-content active">
+			<div class="standings">
+				<div class="container">
+					<table>
+						<thead>
+							<tr>
+								<th>POS</th>
+								<th>Time</th>
+							</tr>
+						</thead>
+						<tbody id="team-info"/>
+					</table>
+				</div>
+			</div>
+			<div class="infos">
+				<div class="container">
+					<table>
+						<thead>
+							<tr>
+								<th>P</th>
+								<th>J</th>
+								<th>V</th>
+								<th>E</th>
+								<th>D</th>
+								<th>GP</th>
+								<th>GC</th>
+								<th>SG</th>
+								<th>%</th>
+							</tr>
+						</thead>
+						<tbody id="points"/>
+					</table>
+				</div>
+			</div>
+			<div style="clear:both"></div>
+		</div>
+		<div id="rodada" class="control-content">
+			<table id="jogos"></table>
+		</div>
+	</div>
+
+	<!-- Block button in standard bar fixed above the footer -->
+	<div class="bar bar-standard bar-footer">
+		<button class="btn btn-block" onclick="update()">Atualizar</button>
+	</div>
+
+	<div id="loader">
+		<div class="overlay"/>
+		<div class="loader"/>
+	</div>
+
+	<script src="jquery-3.1.1.min.js"></script>
+	<script src="update.js"></script>
+</body>
+</html>
+
